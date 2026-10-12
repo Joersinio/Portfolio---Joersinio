@@ -1,0 +1,522 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+body{
+    background-color: #f3efe3;
+}
+
+body.index {
+    background-color: #f3efe3;
+    background-image: url("images/lampe.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: 90% 10%;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    transform: translate(-160px, 10px);
+
+    background-color: #faf8f2;
+    border: 1px solid #e5dfd0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: fit-content;
+    margin: 0 auto;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: black;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+.titre-portfolio {
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+.premiere_page h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.premiere_page{
+    display: flex;
+    margin: 40px;
+}
+
+#accroche{
+    font-size: x-large;
+    margin-left: 30%;
+}
+
+body {
+    margin: 0;
+    padding-left: 320px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.profil {
+    position: fixed;
+    left: 150px;
+    top: 90px;
+    width: 50%;
+
+    width: 300px;
+    height: 600px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.profil img {
+    width: 90%;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.profil h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.profil p{
+    color: gray;
+}
+
+.reseaux {
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 70px;
+}
+
+.reseaux a {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: fit-content;
+    line-height: 0;
+}
+
+.reseaux img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.page2 {
+    padding: 40px;
+}
+
+#apropos {
+    margin-left: 280px;
+}
+
+.page3 {
+    padding: 40px;
+}
+
+#competences {
+    margin-left: 280px;
+}
+
+.page4 {
+    padding: 40px;
+}
+
+#projets {
+    margin-left: 280px;
+}
+
+
+#projets h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro-projets {
+    max-width: 750px;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.liste-projets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.projet-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #faf8f2;
+    border: 1px solid #e5dfd0;
+    color: #333333;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.projet-card:focus-visible {
+    outline: 3px solid #b8860b;
+    outline-offset: 4px;
+}
+
+.projet-image img {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    display: block;
+    border-radius: 7px;
+}
+
+.projet-image {
+    height: 190px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.projet-image span {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.projet-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.projet-infos h3 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+.projet-infos p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+    margin: 0;
+}
+
+.projet-fleche {
+    font-size: 25px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.projet-card:hover .projet-fleche {
+    transform: translate(4px, -4px);
+}
+
+
+.projet-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.projet-technologies span {
+    background-color: #eee8d9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.conclusion-projets {
+    max-width: 750px;
+    line-height: 1.8;
+    color: #666666;
+    margin-top: 35px;
+}
+
+#experience {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#experience h2 {
+    margin-bottom: 25px;
+}
+
+#experience > p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.experience-card {
+    background-color: #faf8f2;
+    border: 1px solid #e5dfd0;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.experience-card p {
+    line-height: 1.8;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.page5 {
+    padding: 40px;
+}
+
+
+#experience {
+    margin-left: 280px;
+}
+
+.page7 {
+    padding: 40px;
+}
+
+
+#contact {
+    margin-left: 280px;
+}
+
+footer {
+    margin-left: 900px;
+}
+
+#formulaire-contact {
+width: 300px;
+max-width: 300px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+
+#formulaire-contact label {
+color: black;
+font-size: 20px;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea {
+width: 600px;
+box-sizing: border-box;
+padding: 5px;
+margin: 0;
+font-size: 13px;
+color: black;
+}
+
+#formulaire-contact input::placeholder,
+#formulaire-contact textarea::placeholder {
+color: rgb(0, 0, 0) !important;
+opacity: 0.4;
+font-size: small;
+}
+
+#formulaire-contact button {
+width: 600px;
+padding: 5px;
+margin-top: 5px;
+font-size: 13px;
+}
+
+.contact-contenu {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+   
+  body {
+    padding-left: 0;
+    width: 100%;
+}
+
+body.index {
+    background-image: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    body:not(.index) .profil {
+        display: none;
+    }
+
+}
+
+header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav {
+    transform: none;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.titre-portfolio {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.premiere_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.premiere_page h2 {
+    font-size: 30px;
+}
+
+#accroche {
+    margin-left: 0;
+    font-size: large;
+    text-align: center;
+}
+
+.profil {
+    position: static;
+    order: 2;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.reseaux {
+    justify-content: center;
+    gap: 30px;
+}
+
+.page2,
+.page3,
+.page4,
+.page5,
+.page6 {
+    padding: 20px;
+}
+
+.liste-projets {
+    grid-template-columns: 1fr;
+}
+
+#projets h2 {
+    font-size: 32px;
+}
+
+.projet-image {
+    height: 170px;
+}
+
+#apropos,
+#competences,
+#projets,
+#experience,
+#contact {
+    margin-left: 0;
+}
+
+#formulaire-contact {
+    width: 100%;
+    max-width: 100%;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea,
+#formulaire-contact button {
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-contenu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+footer {
+    margin-left: 0;
+    text-align: center;
+    padding: 15px;
+}
+}
