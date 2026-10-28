@@ -3,7 +3,7 @@ document.getElementById("menu").innerHTML = `
     <nav>
     <ul>
         <li>
-            <a href="accueil.html" class="nav-item">
+            <a href="index.html" class="nav-item">
                 <img src="../images/accueil.png" alt="Accueil">
                 <span>Accueil</span>
             </a>
