@@ -2,7 +2,7 @@ document.getElementById("profil").innerHTML = `
    
     <aside class="profil">
 
-   <img src="Portfolio---Joersinio/images/photo-portfolio.jpeg" alt="Photo de Profil">
+   <img src=".../images/photo-portfolio.jpeg" alt="Photo de Profil">
 
     <h2>Joersinio Silva</h2>
 
