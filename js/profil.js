@@ -8,8 +8,8 @@ document.getElementById("profil").innerHTML = `
 
     <p>Étudiant en informatique</p>
 <p>
-    Toujours prêt à apprendre, créer et relever de nouveaux défis.
-</p>
+Toujours prêt à apprendre, créer et devenir un développeur confirmé.</p>
+
 
     <div class="reseaux">
     <a href="https://github.com/Joersinio" target="_blank" rel="noopener noreferrer"><img src="../images/github.png" alt="github logo" class="github_logo"></a>
