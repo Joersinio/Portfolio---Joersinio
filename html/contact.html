@@ -25,7 +25,7 @@
 
         <section id="contact">
 
-        <h1>LET'S TALK <i data-lucide="mail"></i>
+        <h1>LET'S TALK<span>.</span> <i data-lucide="mail"></i>
         </h1>
 
         <p>Vous avez un projet un tête? Créeons le ensemble !</p>  
@@ -33,58 +33,62 @@
 
         <div class="contact-contenu">
 
-            <form id="formulaire-contact">
+<form
+    id="formulaire-contact"
+    action="https://formsubmit.co/jjya13@gmail.com"
+    method="POST"
+>
+    <label for="nom">Nom</label>
 
-                <label for="nom">Nom</label>
+    <input
+        type="text"
+        id="nom"
+        name="nom"
+        placeholder="Votre nom"
+        required
+    >
 
-                <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    placeholder="Votre nom"
-                    required
-                >
+    <label for="email">Email</label>
 
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Votre email"
+        required
+    >
 
-                <label for="email">Email</label>
+    <label for="message">Message</label>
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Votre email"
-                    required
-                >
+    <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Votre message"
+        required
+    ></textarea>
 
+    <input
+        type="hidden"
+        name="_subject"
+        value="Nouveau message depuis mon portfolio"
+    >
 
-                <label for="message">Message</label>
+    <button type="submit">
+        Envoyer
+    </button>
+</form>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Votre message"
-                    required
-                ></textarea>
-
-
-                <button type="submit">
-                    Envoyer
-                </button>
-
-            </form>
 
 
 </section>
 </div>
     </main>
 
-     <footer>
-
-        <p>
-            © 2026 Joersinio Silva
-        </p>
-     </footer>
+     <footer
+    
+     id="footer"></footer>
+    <script src="../js/footer.js"></script>
 
     <script>
         lucide.createIcons();

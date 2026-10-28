@@ -1,0 +1,94 @@
+
+#experience {
+    margin-left: 240px;
+    max-width: 900px;
+    padding: 30px;
+}
+
+#experience h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    margin: 10px 0 20px;
+}
+
+#experience h1 span {
+    color: #b7a98b;
+}
+
+#experience h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 22px;
+    margin: 35px 0 20px;
+}
+
+#experience > p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 45px;
+}
+
+.experience-card {
+    background-color: #faf8f2;
+    border: 1px solid #e5dfd0;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card h3 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.experience-card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 768px) {
+    #experience {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #experience h1 {
+        font-size: clamp(32px, 8vw, 45px);
+    }
+
+    #experience h2 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    #experience > p {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .experience-card {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .experience-card h3 {
+        font-size: 17px;
+    }
+
+    .experience-card p {
+        font-size: 14px;
+    }
+}

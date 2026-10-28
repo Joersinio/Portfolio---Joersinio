@@ -9,9 +9,6 @@
 
 body.index {
     background-image: none !important;
-}
-
-@media screen and (max-width: 768px) {
 
     body:not(.index) .profil {
         display: none;
@@ -40,8 +37,7 @@ nav ul {
 }
 
 .titre-portfolio {
-    margin: 20px 0;
-    text-align: center;
+    display: none;
 }
 
 .premiere_page {
@@ -56,23 +52,7 @@ nav ul {
 }
 
 #accroche {
-    margin-left: 0;
-    font-size: large;
-    text-align: center;
-}
-
-.profil {
-    position: static;
-    order: 2;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px auto;
-}
-
-.reseaux {
-    justify-content: center;
-    gap: 30px;
+    display: none;
 }
 
 .page2,
@@ -81,18 +61,6 @@ nav ul {
 .page5,
 .page6 {
     padding: 20px;
-}
-
-.liste-projets {
-    grid-template-columns: 1fr;
-}
-
-#projets h2 {
-    font-size: 32px;
-}
-
-.projet-image {
-    height: 170px;
 }
 
 #apropos,
@@ -122,9 +90,7 @@ nav ul {
 }
 
 footer {
-    margin-left: 0;
-    text-align: center;
-    padding: 15px;
+    display: none;
 }
 }
 

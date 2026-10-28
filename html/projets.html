@@ -26,7 +26,7 @@
     <script src="../js/profil.js"></script>
     <section id="projets">
 
-    <h2>Mes projets</h2>
+    <h1>Mes projets<span>.</span></h1>
 
     <p class="intro-projets">
         Au cours de mon parcours en informatique, je réalise différents projets
@@ -62,10 +62,9 @@
         </a>
 
 
-        <a href="" class="projet-card"
-           target="_blank" rel="noopener noreferrer">
-
+        <a class="projet-card">
             <div class="projet-image pendu-image">
+                <img src="../images/jeu-du-pendu.png" alt="jeu du pendu img">
                 <span>02</span>
             </div>
 
@@ -75,7 +74,6 @@
                     <p>Un jeu développé en Python avec Pygame pour travailler la logique et les interactions.</p>
                 </div>
 
-                <span class="projet-fleche">↗</span>
             </div>
 
             <div class="projet-technologies">
@@ -85,10 +83,14 @@
 
         </a>
 
-        <a href="" class="projet-card"
-           target="_blank" rel="noopener noreferrer">
+        <a class="projet-card">
 
             <div class="projet-image application-image">
+
+        <video controls>
+            <source src="../videos/app.mp4" type="video/mp4">
+            Ton navigateur ne peut pas lire cette vidéo.
+        </video>
                 <span>03</span>
             </div>
 
@@ -98,7 +100,6 @@
                     <p>Un projet réalisé en Swift dans le cadre de l'Apple Foundation Program.</p>
                 </div>
 
-                <span class="projet-fleche">↗</span>
             </div>
 
             <div class="projet-technologies">
@@ -108,10 +109,10 @@
 
         </a>
 
-        <a href="TON-LIEN-GITHUB-PORTFOLIO" class="projet-card"
-           target="_blank" rel="noopener noreferrer">
+        <a class="projet-card">
 
             <div class="projet-image portfolio-image">
+                <img src="../images/portfolio.png" alt="portfolio img">
                 <span>04</span>
             </div>
 
@@ -121,7 +122,6 @@
                     <p>Ce site web pour présenter mon parcours, mes compétences et mes réalisations.</p>
                 </div>
 
-                <span class="projet-fleche">↗</span>
             </div>
 
             <div class="projet-technologies">
@@ -143,12 +143,10 @@
 </section>
       </main>
 
-  <footer>
-
-        <p>
-            © 2026 Joersinio Silva
-        </p>
-     </footer>
+  <footer
+    
+     id="footer"></footer>
+    <script src="../js/footer.js"></script>
 
     <script>
         lucide.createIcons();

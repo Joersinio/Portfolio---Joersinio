@@ -1,0 +1,81 @@
+
+form input,
+form textarea,
+form button {
+    animation: apparitionFormulaire 0.6s ease both;
+}
+
+form input:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+form input:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+form textarea {
+    animation-delay: 0.3s;
+}
+
+form button {
+    animation-delay: 0.4s;
+}
+
+footer {
+    margin-left: 900px;
+}
+
+#formulaire-contact {
+    width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#formulaire-contact label {
+    color: black;
+    font-size: 20px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: bold;
+}
+
+#formulaire-contact input,
+#formulaire-contact textarea {
+    width: 600px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+    color: black;
+}
+
+#formulaire-contact input::placeholder,
+#formulaire-contact textarea::placeholder {
+    color: rgb(0, 0, 0) !important;
+    opacity: 0.4;
+    font-size: small;
+}
+
+#formulaire-contact button {
+    width: 600px;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.contact-contenu {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+#contact h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    margin: 10px 0 20px;
+}
+
+#contact h1 span {
+    color: #b7a98b;
+}
